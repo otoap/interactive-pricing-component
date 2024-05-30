@@ -39,11 +39,13 @@ function calculate() {
         newPrice = (Number(slider.value)*0.32).toFixed(2);
         price.innerHTML = `$${newPrice}`;
         monthYear.innerHTML = "/month";
+        switcher.style.background = "#cfd8ef"
 
     }else {
         //price
         newPrice = (((Number(slider.value)*0.32*12)/100)*75).toFixed(2);
         price.innerHTML = `$${newPrice}`;
         monthYear.innerHTML = "/year";
+        switcher.style.background = "#7aeadf"
     }
 }
